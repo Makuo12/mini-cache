@@ -1,5 +1,4 @@
 
-
 fn main() {
-    println!("Hello, world!");
+    println!("Welcome to mini-cache");
 }
