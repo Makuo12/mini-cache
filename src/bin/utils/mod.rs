@@ -114,9 +114,10 @@ pub struct Command{
 
 impl Command {
     pub fn new(size: usize, data: Vec<u8>) -> Result<Command, MainError> {
-        if data.len() < 4 || size == 0 {
+        if data.len() < 4 || size == 0  || size > data.len() {
             return Err(MainError::BadCommandFormat(String::from("Not enough commands")));
         } 
+
         let mut i = 0;
         let mut key = String::new();
         let mut action = String::new();

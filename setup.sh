@@ -1,9 +1,8 @@
 #! /bin/sh
 
 # We need to know where you want to store your data
-# We need to know where you want to store your data
 echo "Welcome to mini-cache."
-echo "Data is kept in memory, with optional persistent backups stored on disk."
+echo "Data is kept in memory, with a persistent backup stored on disk."
 
 # Check if cargo exists
 if command -v cargo > /dev/null; then
